@@ -8,6 +8,8 @@ copies of atomic spectrum photoplates from NIST’s archive, eliminating the nee
 was scanned with, record the positions and intensities of emission lines on the photoplate, save
 recorded data in a text file, and specify an offset for the positions of these lines.
 
+ASPAS was written by Noah Zuckman under the Montgomery College Internship program.
+
 Dependencies:
 
 The program is written in Python 3. The following modules must be installed before using ASPAS:
