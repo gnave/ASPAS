@@ -141,7 +141,7 @@ class Comparator(ttk.Frame):
     def make_plate_window(self):
         """Creates viewing window for photoplate image."""
         self.int_scroll = tk.Scrollbar(self, orient=tk.HORIZONTAL)
-        self.plate_canvas = tk.Canvas(self, bd=1, relief=tk.RIDGE,
+        self.plate_canvas = tk.Canvas(self, bd=0, highlightthickness=0, relief=tk.RIDGE, cursor="cross",
                                       height=125, xscrollcommand=self.int_scroll.set)
         self.int_scroll.config(command=self.plate_canvas.xview) # Links scroll bar to plate canvas
         self.plate_canvas.grid(row=0, column=1, columnspan=4, sticky=tk.EW, pady=5, ipadx=50)
