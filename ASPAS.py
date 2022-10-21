@@ -126,7 +126,7 @@ class Comparator(ttk.Frame):
         """Propmpts user to select a plate image file."""
         self.file = tk.filedialog.askopenfilename(initialdir = ".",
                                                   title = f"Select a file",
-                                                  filetypes = (("BMP files", "*.bmp*"), ("all files", "*.*")))
+                                                  filetypes = (("BMP files", "*.bmp"), ("all files", "*.*")))
         self.load_plate(self.file)
         self.scan_plate(self.file)
 
